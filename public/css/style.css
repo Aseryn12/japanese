@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-image: url("../img/bgKur.svg");
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    min-height: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.colorJap{
+    color: rgb(188, 0, 45);
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    padding: 0 10px;
+    position: absolute;
+    right: 20vw;
+    width: 20%;
+    background-color: white;
+    border: 1px solid rgb(188 0 45);
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 0 0 50px rgb(255, 183, 197);
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainButtons{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mainForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.authForm{
+    height: 35%;
+}
+
+.regForm{
+    height: 50%;
+}
+
+.mainLabel{
+    width: 100%;
+    color: rgb(186, 0, 45);
+    text-align: left;
+    font-size: 16pt;
+}
+
+.mainInput{
+    color: rgb(186, 0, 45);
+    font-size: 13pt;
+    width: 90%;
+    padding: 6px 10px;
+    border: 1px solid rgb(188, 0, 45);
+    border-radius: 20px;
+}
+
+.mainInput:focus{
+    outline: 1px solid rgb(186, 0, 45);
+}
+
+.btn{
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+    height: 40px;
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.20s;
+}
+
+.btn:hover{
+    outline: 1px solid rgb(186, 0, 45);
+    cursor: pointer;
+    font-size: 17pt;
+}
+
+.auth{
+    background-color: white;
+    color: rgb(186, 0, 45);
+    border: 1px solid rgb(188, 0, 45);
+}
+
+.register{
+    background-color: rgb(188, 0, 45);
+    color: white;
+    border: 1px solid rgb(188, 0, 45);
+}
+
+.appear-enter-active{
+    transition: 0.5s;
+}
+
+.appear-enter{
+    opacity: 0;
+}
+
+.appear-leave-active{
+    display: none;
+}
+
+.backWhite{
+    background-color: white;
+}
+
+.dialSus{
+    width: 400px;
+    height: 300px;
+    padding: 15px 7px;
+    border: solid 1px rgb(188, 0, 45);
+    border-radius: 15px;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inDialSus{
+    font-size: 14pt;
+    border-radius: 10px;
+    color:rgb(188, 0, 45);
+    padding: 5px 5px;
+    transition: 0.1s;
+}
+
+.inDialSus:hover{
+    cursor: pointer;
+    background-color: rgb(188, 0, 45);
+    color: white;
+}
+
+.inDialSus:focus{
+    outline: rgb(188, 0, 45) 2px;
+}
+
+.noneDialSus{
+    display: none;
+}

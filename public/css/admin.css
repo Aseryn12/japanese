@@ -1,0 +1,314 @@
+body{
+    width: 90%;
+    margin: 0 auto 0px auto;
+}
+
+dialog{
+    width: 400px;
+    height: fit-content;
+    padding: 15px 7px;
+    border: solid 1px rgb(188, 0, 45);
+    border-radius: 5px;
+    position: fixed;
+    margin: auto;
+}
+
+.eb{
+    place-self: center;
+}
+
+.insure{
+    text-align: center;
+}
+
+.btnsInForm{
+    margin: 10px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.header{
+    top: 0;
+    position: fixed;
+    width: 88%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    align-items: center;
+    border: 1px solid rgb(188, 0, 45);
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 15px;
+    height: fit-content;
+}
+
+.main{
+    vertical-align: middle;
+    z-index: 1;
+    padding: 15px 0;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 55px;
+    width: 95%;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgb(188, 0, 45);
+    border-top: none;
+}
+
+.kabHead{
+    text-decoration: none;
+    font-size: 16pt;
+    transition: 0.2s;
+}
+
+.kabHead:hover{
+    text-shadow: 0 0 1px rgb(188, 0, 45);
+    cursor: pointer;
+}
+
+.inHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.e{
+    text-align: end;
+}
+
+.btn{
+    padding: 0 7px;
+    width:fit-content;
+}
+
+.dialForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inpField{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 7px 0;
+    font-size: 13pt;
+}
+
+.inpField>input{
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inpField>input:focus{
+    outline: none;
+}
+
+.config{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 1px rgb(188, 0, 45);
+    margin-top: 15px;
+}
+
+.configA{
+    font-size: 14pt;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.configA:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*-------------------------------gliphs--------------------------------*/
+
+.g-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g-list>section{
+    margin: 10px 0;
+    padding: 10px;
+    width: 70%;
+    height: fit-content;
+    border: solid 1px rgb(188, 0, 45);
+    border-radius: 10px;
+}
+
+.g-listElem{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.gliphType{
+    text-align: center;
+}
+
+.desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.t-listElem{
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "i t t"
+    "q q q";
+}
+
+.listElem-header{
+    width: 100%;
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row;
+    justify-content: space-around;
+    align-items: center;*/
+    grid-area: h; 
+}
+
+.inHeader-list{
+    margin-left: 20px;
+}
+
+
+.closeTask{
+    display: none;
+}
+
+.t-emblem{
+    grid-area: i;
+}
+
+.t-emblem>img, .g-listElem>img{
+    width: 200px;
+    height: 200px;
+}
+
+.t-desc{
+    text-align: justify;
+    grid-area: t;
+    margin: 0 10px; 
+}
+
+.ta-answ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.a-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.u-listElem{
+    display: grid;
+    grid-template-areas: 
+    "c h h"
+    "c i i";
+    grid-template-columns: 25% auto auto;
+    grid-template-rows: auto auto;
+}
+
+.u-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: c;
+}
+
+.descHeader{
+    text-align: center;
+    grid-area: h;
+}
+
+.u-desc{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-area: i;
+}
+
+.u-desc>div{
+    align-self: center;
+    justify-self: center;
+    margin: 30px;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mid{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixedThing{
+    text-align: left;
+    width: 80px;
+    left: 8%;
+    position: fixed;
+}
+
+.fixedThing2{
+    font-size: 14pt;
+    text-align: left;
+    width: 80px;
+    top: 18%;
+    left: 8%;
+    position: fixed;
+}
+
+.fixedThing3{
+    text-align: left;
+    width: 120px;
+    top: 22%;
+    left: 8%;
+    position: fixed;
+}
+
+.forInputs{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forInputs>label{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.forInputs>label>*{
+    width: 100%;
+}

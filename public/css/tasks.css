@@ -1,0 +1,255 @@
+main{
+    margin-top: 30px;
+    height: 80%;
+    display: grid;
+}
+
+.dial{
+    width: 400px;
+    height: 300px;
+    padding: 15px 7px;
+    border: solid 1px rgb(188, 0, 45);
+    border-radius: 15px;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inDial{
+    font-size: 14pt;
+    border-radius: 10px;
+    color:rgb(188, 0, 45);
+    padding: 5px 5px;
+    transition: 0.1s;
+}
+
+.inDial:hover{
+    cursor: pointer;
+    background-color: rgb(188, 0, 45);
+    color: white;
+}
+
+.inDial:focus{
+    outline: rgb(188, 0, 45) 2px;
+}
+
+.colorJap{
+    color: rgb(188, 0, 45);
+}
+
+.header{
+    padding: 0 6px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    border-bottom: 1px solid rgb(188, 0, 45);
+}
+
+.g{
+    place-self: center start;
+}
+
+.e{
+    place-self: center end;
+}
+
+.task{
+    place-self: center;
+    background-color: white;
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid rgb(188, 0, 45);
+    box-shadow: 0 0 50px rgb(255, 183, 197);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    ". . i . ."
+    "t t t t t"
+    ". a a a .";
+    grid-gap: 30px;    
+}
+
+.taskBtn{
+    height: 40px;
+    padding: 0px 7px;
+    width: 120px;
+    font-size: 12pt;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.taskBtn:hover{
+    cursor: pointer;
+    outline:rgb(188, 0, 45) 1px solid;
+}
+
+.i{
+    height: 200px;
+    grid-area: i;
+    place-self: center;
+}
+
+.t{
+    grid-area: t;
+    place-self: center;
+}
+
+.a{
+    grid-area: a;
+    place-self: center;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px 30px;
+
+}
+
+.inA{
+    width: 8vw;
+    height: 6vh;
+    background-color: white;
+    border: 1px solid rgb(188, 0, 45);
+    border-radius: 10px; 
+}
+
+.answer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.inA:hover{
+    cursor: pointer;
+    background-color: rgb(188, 0, 45);
+}
+
+.answer:hover{
+    color: white;
+}
+
+/*==================================================THEORY-PAGE=============================================================*/
+
+.rangeTask{
+    place-self: center;
+    width: 65%;
+    height: 70%;
+    border-radius: 4px;
+    border: 1px solid rgb(188, 0, 45);
+}
+
+.inRangeTask{
+    height: 100%;
+    border-radius: 2px;
+    background-color: rgb(255, 183, 197);
+}
+
+.taskTh{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 40% 45% 10%;
+    background-color: white;
+    width: 70%;
+    margin: 15px auto;
+    padding: 20px;
+    border: 1px solid rgb(188, 0, 45);
+    box-shadow: 0 0 50px rgb(255, 183, 197);
+    border-radius: 20px;
+}
+
+.theoryTitle{
+    place-self: center;
+    color: rgb(188, 0, 45);
+    text-align: center;
+}
+
+.theoryImg{
+    place-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gName{
+    font-size: 20pt;
+    text-align: center;
+}
+
+.theoryText{
+    font-size: 16pt;
+    text-align: center;
+    place-self: top center;
+}
+
+.theoryBtns{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 45px;
+    place-self: center;
+}
+
+@media screen and (max-width: 1275px) {
+    .theoryBtns{
+        height: 90px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+    }   
+}
+
+.aBtn{
+    place-self: center;
+    margin: 10px;
+}
+
+.btnTh{
+    width: 170px;
+}
+
+/*=======================================================================ITOG================================================================*/
+
+.mainItog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.res{
+    width: 60%;
+    height: 40%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid rgb(188, 0, 45);
+    box-shadow: 0 0 50px rgb(255, 183, 197);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inRes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 60%;
+}
+
+.inResText{
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
